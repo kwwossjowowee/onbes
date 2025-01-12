@@ -19,4 +19,4 @@ COPY . .
 EXPOSE 8888
 
 # Start the Jupyter Notebook
-CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0"]
+CMD ["jupyter", "notebook", "--port=8888", "--allow-root", "--no-browser", "--ip=0.0.0.0"]
