@@ -5,4 +5,4 @@ RUN apt update -y
 RUN apt upgrade -y
 RUN apt install curl -y
 RUN curl -fsSL https://code-server.dev/install.sh | sh
-ENTRYPOINT ["code-server", "--auth", "none"]
+ENTRYPOINT ["code-server", "--auth", "none", "--bind-addr", "localhost:3000"]
