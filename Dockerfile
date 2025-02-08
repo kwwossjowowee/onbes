@@ -1,4 +1,4 @@
-FROM debian:latest 
+FROM node:latest 
 WORKDIR /work
 COPY . /work
 RUN apt update -y
