@@ -3,6 +3,6 @@ WORKDIR /work
 COPY . /work
 RUN apt update -y
 RUN apt upgrade -y
-RUN apt install curl python3-pip -y
-RUN curl -fsSL https://code-server.dev/install.sh | sh
-CMD code-server --auth none --bind-addr 0.0.0.0:3000
+RUN apt install python3-pip -y
+RUN pip install notebook --break-system-packages
+ENTRYPOINT ["bash", "run.sh"]
