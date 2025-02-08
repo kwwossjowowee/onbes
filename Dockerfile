@@ -1,4 +1,4 @@
-FROM node:latest 
+FROM pypy:latest 
 WORKDIR /work
 COPY . /work
 RUN apt update -y
